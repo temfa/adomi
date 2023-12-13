@@ -1,0 +1,49 @@
+.teamBody {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 140px 0px;
+}
+
+.teamCards {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.teamCards div p {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.teamCards div h2 {
+    color: var(--Heading-Text, #0F1A20);
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    /* 147.826% */
+}
+
+.teamCards div p {
+    color: var(--Body-Text, #333);
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+.teamCards a {
+    color: var(--primary-500, #1B2CC1);
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+    text-decoration-line: underline;
+}

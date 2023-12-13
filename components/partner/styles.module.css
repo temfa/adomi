@@ -1,0 +1,88 @@
+.partnerContainer {
+    width: 100%;
+    padding: 140px 0px;
+    background: #121212;
+}
+
+.partnerWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.partnerText {
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.partnerHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.partnerHeader h3 {
+    color: var(--accent-500, #DAA520);
+    font-family: "Work Sans", sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 147.368% */
+}
+
+.partnerHeader h2 {
+    color: var(--White, #FFF);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    /* 150% */
+}
+
+.partnerHeader p {
+    color: var(--neutral-50, #E4E4E4);
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+.startUp {
+    display: flex;
+    gap: 48px;
+    padding: 24px 0px;
+    border-top: 1px solid var(--White, #FFF);
+    border-bottom: 1px solid var(--White, #FFF);
+}
+
+.startUp div {
+    width: 100%;
+}
+
+.startUp div h2 {
+    color: var(--accent-500, #DAA520);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    /* 150% */
+}
+
+.startUp div p {
+    color: #FFF;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+.partnerButton {
+    display: flex;
+    gap: 24px;
+}

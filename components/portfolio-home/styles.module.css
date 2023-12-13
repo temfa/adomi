@@ -1,0 +1,5 @@
+.portfolioHome {
+    width: 100%;
+    padding: 140px 0px;
+    background: var(--Background, #F8F8F8);
+}

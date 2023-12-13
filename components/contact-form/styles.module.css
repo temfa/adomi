@@ -1,0 +1,98 @@
+.contactBody {
+    width: 100%;
+    padding: 140px 0px;
+    background: var(--Background, #F8F8F8);
+}
+
+.contactWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactSocials {
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.contactSocialsBody {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contactSocialsBody>h2 {
+    color: var(--Heading-Text, #141414);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    /* 150% */
+}
+
+.contactSocialWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contactSocialWrap p {
+    color: var(--Body-Text-on-dark-bg, #3C3C3C);
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+.contactSocialWrap a {
+    display: flex;
+    gap: 8px;
+    color: var(--primary-500, #1B2CC1);
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration-line: underline;
+}
+
+.contactSocialCont {
+    display: flex;
+    gap: 16px;
+}
+
+.contactBody form {
+    width: 57%;
+    max-width: 733px;
+}
+
+.contactForm {
+    width: 100%;
+    border-radius: 16px;
+    background: url("../../public/images/pattern-bg2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px 48px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.contactFormBody {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contactFormDouble {
+    display: flex;
+    gap: 24px;
+}
+
+.contactButton {
+    width: 248px;
+}

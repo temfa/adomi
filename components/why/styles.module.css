@@ -1,0 +1,60 @@
+.whyContainer {
+    width: 100%;
+    padding: 140px 0px;
+    background: url("../../public/images/pattern-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.whyWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.whyText {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.whyHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.whyHeader>h3 {
+    color: var(--accent-500, #DAA520);
+    font-family: "Work Sans", sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 147.368% */
+}
+
+.whyHeader>h2 {
+    color: #0F1A20;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    /* 150% */
+}
+
+.whyHeader>p {
+    color: var(--Body-Text, #333);
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    width: 65%;
+    /* 150% */
+}
+
+.whyButton {
+    width: 285px;
+}

@@ -1,0 +1,119 @@
+.heroContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 141px;
+    height: 892px;
+    width: 100%;
+    background-color: black;
+}
+
+.heroContainers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 196px;
+    height: 1024px;
+    background-color: black;
+}
+
+.heroWrapper {
+    width: 100%;
+    position: relative;
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+    margin-bottom: 80px;
+}
+
+.heroText>h2 {
+    color: var(--White, #FFF);
+    font-size: 108px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 112px;
+    /* 103.704% */
+}
+
+.heroText>h2 span {
+    color: var(--accent-500, #DAA520);
+}
+
+.heroText div {
+    width: 296px;
+}
+
+.heroShapes {
+    box-sizing: border-box;
+    height: 200px;
+    position: absolute;
+    right: 0px;
+    /* max-width: 1280px; */
+    width: 88%;
+    /* top: 80px; */
+}
+
+.heroShapes .sliderImage {
+    margin-right: 32px;
+}
+
+.heroTexts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.heroTexts h2:first-child {
+    color: var(--accent-500, #DAA520);
+    font-size: 57px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 86px;
+    text-transform: uppercase;
+    /* 150.877% */
+}
+
+.heroTexts h2:last-child {
+    color: var(--White, #FFF);
+    font-size: 108px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 112px;
+    /* 103.704% */
+}
+
+.heroTexts2 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 954px;
+}
+
+.heroTexts2 h2:first-child {
+    color: var(--White, #FFF);
+    font-size: 108px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 162px;
+    /* 150% */
+}
+
+.heroTexts2 h2:last-child {
+    color: var(--Background, #F8F8F8);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 42px;
+    /* 150% */
+}
+
+@media screen and (min-width: 1681px) {
+    .heroShapes {
+        position: unset;
+        width: 100%;
+    }
+}

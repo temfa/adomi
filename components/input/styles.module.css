@@ -1,0 +1,67 @@
+.inputContainer {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    background: var(--neutral-25, #F8F8F8);
+    border: none;
+    box-sizing: border-box;
+    padding: 16px;
+}
+
+.inputContainer input,
+.inputContainer textarea {
+    width: 100%;
+    border: none;
+    padding: 10px 0px;
+    background-color: transparent;
+    margin-top: 0px;
+}
+
+.step-hint-single div input[type="text"] {
+    text-transform: capitalize;
+}
+
+.inputContainer span {
+    position: absolute;
+    left: 0;
+    padding: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+    color: var(--neutral-300, #A8A8A8);
+    font-family: "Work Sans", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 153.846% */
+    top: 4px;
+}
+
+/* .inputContainer input:valid ~ span, */
+.inputContainer input:not(:placeholder-shown)~span,
+.inputContainer input:focus~span,
+.inputContainer textarea:not(:placeholder-shown)~span,
+.inputContainer textarea:focus~span {
+    transform: translateX(0px) translateY(-10px);
+}
+
+/* .inputContainer input:valid, */
+.inputContainer input:not(:placeholder-shown),
+.inputContainer input:focus,
+.inputContainer textarea:not(:placeholder-shown),
+.inputContainer textarea:notfocus {
+    /* margin-top: 5px !important; */
+    padding-bottom: 0px !important;
+    color: var(--Body-Text, #333);
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+}
+
+
+.inputContainer textarea {
+    height: 135px;
+}

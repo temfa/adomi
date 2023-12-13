@@ -1,0 +1,9 @@
+.bioImage {
+    position: relative;
+    height: 892px;
+    width: 100%;
+}
+
+.bioImage img {
+    object-fit: contain;
+}

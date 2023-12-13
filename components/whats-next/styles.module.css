@@ -1,0 +1,39 @@
+.whatsNext {
+    width: 100%;
+    padding: 140px 0px;
+    background: #121212;
+}
+
+.whatsWrapper {
+    display: flex;
+}
+
+.whatsWrapper p {
+    width: 50%;
+    color: var(--accent-500, #DAA520);
+    font-family: "Work Sans", sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 147.368% */
+}
+
+.whatsWrapper div {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.whatsWrapper div h2 {
+    color: var(--White, #FFF);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    /* 150% */
+}
+
+.whatsWrapper div svg {
+    cursor: pointer;
+}

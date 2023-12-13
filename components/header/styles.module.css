@@ -1,0 +1,81 @@
+.headerContainer {
+    width: 100%;
+    padding: 24px 0px;
+    box-sizing: border-box;
+}
+
+.headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.headerLogo div {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.headerLogo div p {
+    color: #FFF;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+}
+
+.headerNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+}
+
+.headerLinks {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    width: 58%;
+}
+
+.headerLinks a {
+    color: var(--White, #FFF);
+    text-decoration: none;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: "Work Sans", sans-serif;
+    /* transition: 0.5s all ease-in-out */
+    /* 147.368% */
+}
+
+
+/* .link:hover {
+    color: var(--primary-500, #1B2CC1);
+    transition: 0.5s all ease-in-out;
+} */
+
+.headerActions {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.headerContact {
+    width: 136px;
+}
+
+.headerExplore {
+    width: 140px;
+}
+
+@media screen and (min-width: 1440px) {
+    .headerWrapper {
+        max-width: 1280px;
+    }
+}

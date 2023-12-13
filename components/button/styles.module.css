@@ -1,0 +1,46 @@
+.primaryButton {
+    border-radius: 8px;
+    background: var(--primary-500, #1B2CC1);
+    border: none;
+    padding: 16px 0px;
+    width: 100%;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+    text-transform: capitalize;
+}
+
+.secondaryButton {
+    border-radius: 8px;
+    border: 1px solid var(--primary-500, #1B2CC1);
+    background: var(--White, #FFF);
+    padding: 16px 24px;
+    width: 100%;
+    cursor: pointer;
+    color: var(--primary-500, #1B2CC1);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+    text-transform: capitalize;
+}
+
+.disabledButton {
+    border-radius: 8px;
+    background: var(--primary-25, #8F94C1);
+    padding: 16px 24px;
+    width: 100%;
+    cursor: not-allowed;
+    color: var(--neutral-25, #F8F8F8);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    border: none;
+    /* 150% */
+}
