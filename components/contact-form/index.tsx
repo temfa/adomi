@@ -63,7 +63,7 @@ const ContactForm = () => {
                   <Input type="text" placeholder="Last Name" />
                 </div>
                 <Input type="email" placeholder="Email Address" />
-                <PhoneNumber />
+                <PhoneNumber type={false} placeholder="Phone Number" />
                 <Input
                   type="textarea"
                   placeholder="Message"

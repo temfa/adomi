@@ -1,0 +1,17 @@
+.serviceHeader {
+    padding: 140px 0px;
+    width: 100%;
+    background-image: url("../../public/images/services-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.serviceHeader h2 {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-size: 57px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 86px;
+    /* 150.877% */
+}

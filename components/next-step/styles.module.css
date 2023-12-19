@@ -1,0 +1,55 @@
+.nextStep {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    background: var(--Dark-Background, #121212);
+    padding: 140px 0px;
+}
+
+.nextFirst {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.nextFirst p {
+    color: var(--accent-500, #DAA520);
+    font-family: "Work Sans", sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 147.368% */
+}
+
+.nextFirst h2 {
+    color: var(--White, #FFF);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    /* 150% */
+}
+
+.nextSecond {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    align-items: center;
+}
+
+.nextSecond p {
+    color: var(--neutral-50, #E4E4E4);
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+.nextSecond div {
+    width: 296px;
+}

@@ -1,0 +1,15 @@
+.applyLayout {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.applyWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.applyButton {
+    width: 248px;
+}

@@ -1,0 +1,41 @@
+.processContainer {
+    width: 100%;
+    background: var(--Dark-Background, #121212);
+    padding: 140px 0px;
+}
+
+.processWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.processHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.processHeader h2:first-child {
+    color: var(--White, #FFF);
+    font-size: 57px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 86px;
+    /* 150.877% */
+}
+
+.processHeader h2:last-child {
+    color: var(--Background, #F8F8F8);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 42px;
+    /* 150% */
+}
+
+.processBody {
+    display: flex;
+    justify-content: space-between;
+}

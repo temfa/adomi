@@ -49,6 +49,12 @@ const Hero = ({ page, title, text, bg }: { page?: string; title?: string; text?:
             <div className={styles.heroTexts}>
               <h2>{text}</h2>
               <h2>{title}</h2>
+              {page === "get started" ? (
+                <div>
+                  <Button buttonText="for Startups" type="Primary" active={true} />
+                  <Button buttonText="for Partnership" type="Primary" active={true} />
+                </div>
+              ) : null}
             </div>
           )}
         </Layout>

@@ -77,13 +77,19 @@
     /* 150.877% */
 }
 
-.heroTexts h2:last-child {
+.heroTexts h2:nth-child(2) {
     color: var(--White, #FFF);
     font-size: 108px;
     font-style: normal;
     font-weight: 700;
     line-height: 112px;
     /* 103.704% */
+}
+
+.heroTexts div {
+    width: 40%;
+    display: flex;
+    gap: 32px;
 }
 
 .heroTexts2 {

@@ -1,19 +1,38 @@
 .phoneNumber {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     width: 100%;
     gap: 8px;
     border-radius: 8px;
     background: var(--neutral-25, #F8F8F8);
+    position: relative;
+    overscroll-behavior: contain;
 }
 
-.phoneNumber div {
+.phoneNumber .phoneFlag {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 8px 0px 0px 8px;
     background: var(--neutral-50, #E4E4E4);
-    padding: 20px 12px 8px 12px;
+    padding: 12px 12px 6px 12px;
+    cursor: pointer;
+}
+
+.phoneFlag div {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.phoneFlag div p {
+    color: var(--Body-Text, #333);
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
 }
 
 .phoneNumber>p {
@@ -25,15 +44,76 @@
     line-height: 24px;
 }
 
-.phoneNumber input {
+
+.phoneDropdown {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    height: 500px;
+    overflow-y: scroll;
+    border-radius: 8px;
+    border: 1px solid var(--neutral-50, #E4E4E4);
+    background: var(--White, #FFF);
+    padding: 16px 8px 16px 16px;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 8px -4px rgba(0, 0, 0, 0.03), 0px 20px 24px -4px rgba(0, 0, 0, 0.08);
     width: 100%;
-    border: none;
-    background: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 2;
+}
+
+.phoneDropdown::-webkit-scrollbar {
+    display: none;
+}
+
+.phoneSearch {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: var(--neutral-25, #F8F8F8);
+    padding: 10px 14px;
+    box-sizing: border-box;
+}
+
+.phoneSearch input {
     color: var(--neutral-300, #A8A8A8);
-    font-family: "Work Sans" sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
+    line-height: 24px;
+    width: 100%;
+    border: none;
+    background: transparent;
+    /* 150% */
+}
+
+.phoneDropdownSingle {
+    padding: 10px 14px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.phoneDropdownSingle div {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+
+.phoneDropdownSingle p {
+    color: var(--Body-Text, #333);
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
     line-height: 24px;
     /* 150% */
 }

@@ -12,7 +12,7 @@
 .inputContainer textarea {
     width: 100%;
     border: none;
-    padding: 10px 0px;
+    padding: 14px 0px 0px;
     background-color: transparent;
     margin-top: 0px;
 }
@@ -63,5 +63,5 @@
 
 
 .inputContainer textarea {
-    height: 135px;
+    height: 128px;
 }

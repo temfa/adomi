@@ -3,19 +3,10 @@ import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 import Footer from "@/components/footer";
 import Overview from "@/components/overview";
-import { team } from "@/utils/data";
+import { Sample, team } from "@/utils/data";
 import Image from "next/image";
 
 const Bio = ({ params }: { params: { slug: string } }) => {
-  interface Sample {
-    id: string;
-    name: string;
-    position: string;
-    email: string;
-    linkedin: string;
-    picture: string;
-    overview: string[];
-  }
   const [data, setData] = useState<Sample>({
     id: "",
     name: "",

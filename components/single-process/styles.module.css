@@ -1,0 +1,54 @@
+.singleProcess,
+.singleProcess2 {
+    width: 49%;
+    display: flex;
+    box-sizing: border-box;
+    gap: 32px;
+    border-radius: 16px;
+    padding: 88px 77px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.singleProcess {
+    background: var(--accent-300, #DAB14C);
+}
+
+.singleProcess2 {
+    background: var(--info-100, #96D1F6);
+}
+
+.singleText {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.processText {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.processText h2 {
+    color: var(--Heading-Text, #0F1A20);
+    font-size: 43.456px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    /* 54.32px */
+}
+
+.processText p {
+    color: var(--Body-Text, #333);
+    font-family: "Work Sans" sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+.processButton {
+    width: 214px;
+}

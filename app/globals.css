@@ -34,3 +34,65 @@ textarea:focus {
 html {
   scroll-behavior: smooth;
 }
+
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.loading-container {
+  width: 100%;
+  background: var(--Dark-Background, #121212);
+  margin: 0px auto;
+  padding: 126px 0px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.loading-body {
+  width: 74%;
+  background-image: url("../public/images/about.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 640px;
+  display: flex;
+  gap: 169px;
+  flex-direction: column;
+  padding: 56px 78px;
+  box-sizing: border-box;
+}
+
+.loading-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.loading-logo p {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* 150% */
+}
+
+.loading-cont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.loading-cont p {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  /* 147.368% */
+}

@@ -1,0 +1,22 @@
+.servicesIntro {
+    width: 100%;
+    background-image: url("../../public/images/pattern-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 140px 0px;
+}
+
+.servicesWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.servicesWrapper h2 {
+    color: var(--Body-Text, #333);
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+    /* 151.515% */
+}

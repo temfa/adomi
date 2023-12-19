@@ -1,13 +1,14 @@
 import React from "react";
 import styles from "./styles.module.css";
-import { aboutUs } from "@/utils/data";
 import Layout from "@/utils/layout";
 import Image from "next/image";
 
-const Story = () => {
-  return aboutUs?.map((item, index) => {
+const Story = ({ array, type }: { array: any; type: boolean }) => {
+  return array?.map((item: any, index: any) => {
     return (
-      <div className={(index + 1) % 2 === 0 ? styles.storyContainers : styles.storyContainer} key={index}>
+      <div
+        className={type ? ((index + 1) % 2 === 1 ? styles.storyContainers : styles.storyContainer) : (index + 1) % 2 === 0 ? styles.storyContainers : styles.storyContainer}
+        key={index}>
         <Layout>
           <div className={styles.storyWrapper}>
             <div className={styles.storyText}>
@@ -16,10 +17,17 @@ const Story = () => {
                 <h2>{item.title}</h2>
               </div>
               <div className={styles.storyBody}>
-                {item.subtexts?.map((items, index2) => {
+                {item.subtexts?.map((items: any, index2: any) => {
                   return <p key={index2}>{items}</p>;
                 })}
               </div>
+              {item.req ? (
+                <div className={styles.req}>
+                  {item.req?.map((req: any, index3: any) => {
+                    return <p key={index3}>{req}</p>;
+                  })}
+                </div>
+              ) : null}
             </div>
             <Image src={item.img} width={602} height={640} alt="about" />
           </div>

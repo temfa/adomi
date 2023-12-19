@@ -127,6 +127,132 @@ export const aboutUs = [
     img: "./images/about3.png",
   },
 ];
+export const getStarted = [
+  {
+    text: "",
+    title: "Curated Opportunities",
+    subtexts: [
+      "Embark on a journey of discovery through our meticulously curated portfolio. From cutting-edge technology ventures to groundbreaking healthcare solutions and sustainable innovations, each opportunity is handpicked for its potential to revolutionise industries.",
+      "Our thorough vetting process ensures that you invest in ventures poised for significant growth and innovation.",
+    ],
+    img: "./images/about1.png",
+  },
+  {
+    text: "",
+    title: "Local Expertise, Global Vision",
+    subtexts: [
+      "Join a dynamic community that bridges local insights with a global vision. Our team possesses a deep understanding of diverse markets, allowing us to provide strategic guidance tailored to specific geographic nuances.",
+      "The cultural intelligence embedded in our approach enables seamless navigation of global opportunities, fostering a network that extends far beyond geographical boundaries.",
+    ],
+    img: "./images/about3.png",
+  },
+  {
+    text: "",
+    title: "Strategic Growth",
+    subtexts: [
+      "At Adomi Capital & Advisory, we believe in investments that transcend mere financial transactions. Engage with us to contribute to sustainable growth and meaningful impact. ",
+      "Our focus is on ventures that align with a long-term vision, ensuring your investments play a crucial role in shaping the future landscape of industries.",
+      " Benefit from sectoral expertise, embrace impactful investments, and become part of an innovation ecosystem that propels strategic growth on a global scale.",
+    ],
+    img: "./images/about1.png",
+  },
+];
+export const partners = [
+  {
+    text: "STEP 1",
+    title: "Explore Opportunities",
+    subtexts: ["Dive into our areas of interest and explore a spectrum of ventures tailored for your investment preferences."],
+    img: "./images/about2.png",
+  },
+  {
+    text: "STEP 2",
+    title: "Submit Your Interest",
+    subtexts: ["Express your interest by filling out our application form, providing insights into your investment goals and preferences."],
+    img: "./images/about1.png",
+  },
+  {
+    text: "STEP 3",
+    title: "Strategic Consultation",
+    subtexts: [
+      "Upon receiving your application, our team will reach out for a strategic consultation. This personalised session aims to align your objectives with the best-suited investment opportunities.",
+    ],
+    img: "./images/about3.png",
+  },
+  {
+    text: "STEP 4",
+    title: "Seamless Onboarding",
+    subtexts: [
+      "Once you've identified your preferred opportunities, our seamless onboarding process ensures that you transition effortlessly into the world of transformative investments.",
+    ],
+    img: "./images/about1.png",
+  },
+];
+
+export const startup = [
+  {
+    text: "STEP 1",
+    title: "Online  Application Form",
+    subtexts: ["Proceed to fill out our online application form and provide essential details about your startup, including:"],
+    img: "./images/about2.png",
+    req: [
+      "- Company Name and Contact Information",
+      "- Founding Team Background",
+      "- Business Model and Value Proposition",
+      "- Current Stage of Development",
+      "- Funding Requirements and Use of Funds",
+    ],
+  },
+  {
+    text: "STEP 2",
+    title: "Initial Screening",
+    subtexts: ["Our team will conduct an initial screening of your application. We look for startups that demonstrate:"],
+    req: ["- Innovation and Unique Value Proposition", "- Scalability and Market Potential", "- Strong Founder Team", "- Alignment with Our Investment Sectors"],
+    img: "./images/about1.png",
+  },
+  {
+    text: "STEP 3",
+    title: "Due Diligence",
+    subtexts: ["Shortlisted startups will undergo a more in-depth due diligence process. This may include:"],
+    req: [
+      "- Financial and Legal Assessment",
+      "- Market Analysis and Competitive Landscape",
+      "- Technology and Product Evaluation",
+      "- Meetings with Founders for a Deeper Understanding",
+    ],
+    img: "./images/about3.png",
+  },
+  {
+    text: "STEP 4",
+    title: "Investment Committee Review",
+    subtexts: [
+      "Successful startups from the due diligence phase will be presented to our Investment Committee. This committee, composed of experienced professionals, will assess the overall viability and potential of your venture.",
+    ],
+    // req: [
+    //   "- Financial and Legal Assessment",
+    //   "- Market Analysis and Competitive Landscape",
+    //   "- Technology and Product Evaluation",
+    //   "- Meetings with Founders for a Deeper Understanding",
+    // ],
+    img: "./images/about1.png",
+  },
+  {
+    text: "STEP 5",
+    title: "Term Sheet Negotiation",
+    subtexts: [
+      "If your startup aligns with our investment goals and passes the Investment Committee review, we'll present a term sheet outlining the proposed terms of the investment. ",
+      "This stage involves negotiations and discussions to ensure mutual understanding.",
+    ],
+    img: "./images/about2.png",
+  },
+  {
+    text: "STEP 6",
+    title: "Funding Agreement and Partnership",
+    subtexts: [
+      "Upon reaching mutual agreement, we proceed to finalize the funding agreement. This marks the beginning of a partnership where we work closely with you to support and accelerate your growth.",
+    ],
+    img: "./images/about1.png",
+  },
+];
 
 export const areasData = [
   {
@@ -379,7 +505,7 @@ export const filterPortfolio = [
   },
 ];
 
-interface Sample {
+export interface Sample {
   id: string;
   name: string;
   position: string;
@@ -405,3 +531,69 @@ export const team: Sample[] = [
     ],
   },
 ];
+
+export const services = [
+  {
+    title: "PHASE I",
+    subTitles: [
+      {
+        texts: "Capital raising For Projects",
+        subTexts: [
+          "Our services are designed to be your trusted partner in obtaining the essential capital required to turn your projects into reality. We understand that securing funding can be a daunting task, whether you're an entrepreneur looking to kickstart a new venture, a SME seeking to expand, or a sustainability-focused organization aiming to fund a meaningful cause. That's where we come in. ",
+          "Our team specializes in creating customized financial solutions, connecting you with potential investors, and navigating the intricacies of fundraising. With a proven track record and a commitment to your project's success, we are dedicated to helping you bridge the gap between your vision and the resources needed to bring it to life. Let us be your financial ally, turning your aspirations into tangible achievements.",
+        ],
+      },
+      {
+        texts: "Syndicated Loans",
+        subTexts: [
+          "Our services are tailored to support and facilitate syndicated loans, serving as a vital intermediary between lenders and borrowers. We understand the complexities of syndicated lending and the importance of efficiently structuring and executing these transactions. Whether you're a corporation seeking to raise capital through syndication or a financial institution looking to invest in syndicated loans, we offer expertise in bringing together lenders and borrowers, mitigating risks, and streamlining the syndication process.",
+          "With a deep understanding of the financial landscape, we help clients navigate the intricacies of syndicated loans, ensuring they receive the funding they need and helping lenders achieve their investment objectives. Let us be your trusted partner in the world of syndicated loans, optimizing opportunities and reducing friction in the lending process.",
+        ],
+      },
+      {
+        texts: "SME Alternative Financing",
+        subTexts: [
+          "Our services are dedicated to empowering small businesses with alternative financial solutions that go beyond traditional banking. We recognise the unique challenges that small businesses face in accessing capital, and we're committed to helping them thrive. Whether you need working capital, equipment financing, merchant cash advances, or other innovative financial instruments, we offer a range of tailored solutions designed to meet your specific needs. ",
+          "With a focus on flexibility, quick approvals, and personalised support, we aim to be the lifeline for small businesses, providing the financial resources they require to grow, adapt, and seize opportunities in an ever-evolving marketplace. Let us be your partner in success, offering accessible and innovative financial options to fuel your entrepreneurial dreams.",
+        ],
+      },
+      {
+        texts: "Procurement Financing",
+        subTexts: [
+          "Our specialised services are designed to offer comprehensive procurement contract financial solutions, addressing the unique financial challenges faced by businesses engaged in procurement activities. We understand the critical role that procurement plays in any organisation's success and the need for seamless financial support throughout the procurement cycle. ",
+          "Whether you are a supplier seeking working capital to fulfil large orders, a government agency in need of structured payment plans, or a company managing complex procurement contracts, we provide tailored financial solutions to ensure the smooth execution of your procurement projects. ",
+          "Our expertise lies in optimising cash flow, mitigating financial risks, and enhancing efficiency, enabling you to focus on your core business while we take care of your financial procurement needs. Let us be your trusted partner in navigating the intricate world of procurement contract financing, ensuring you can meet your contractual obligations with confidence.",
+        ],
+      },
+    ],
+  },
+  {
+    title: "PHASE II",
+    subTitles: [
+      {
+        texts: "Venture Capital",
+        subTexts: [
+          "Driven by our views of the trends shaping societies, we invest today with tomorrow in mind, so every generation prospers. We aim to build a resilient and forward looking portfolio that delivers sustainable returns over the long term. We deploy capital to catalyse solutions that can enable companies to transition to a more sustainable future, tap on opportunities to invest in future growth sectors and business models, and encourage enterprises to transform through efforts in innovation.",
+          "Our investment activities are aligned to four structural trends that shape our long term portfolio construction. Adomi Capital specializes in technology and innovation sectors, such as software, biotech, agritech, fintech, and clean energy, fostering advancements in these areas.",
+        ],
+      },
+      {
+        texts: "Fintech and Payment Gateway Solution ",
+        subTexts: [
+          "We believe in the power of financial innovation to drive progress and accessibility. Our Fintech and Payment Gateway Solution is dedicated to supporting startups that are at the forefront of reshaping the financial industry. Whether it's reimagining payment processes, optimizing financial operations, or introducing groundbreaking technologies, we invest in ventures poised to revolutionize how we interact with money.",
+        ],
+      },
+    ],
+  },
+];
+
+export const partnersForm = ["Application Form", "Investment Preferences"];
+export const startupForm = ["Company Information", "Investment Details", "About Your Team", "Upload Documents"];
+
+export const sectors = ["Software", "Biotech", "Agritech", "Fintech", "Clean Energy"];
+
+export const timelines = ["Short - term", "Medium - term", "Long - term"];
+
+export const locations = ["Nigeria", "Ghana"];
+
+export const fundingStatus = ["Pre - seed", "Seed", "Series A", "Series B", "Series C"];

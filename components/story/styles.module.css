@@ -72,3 +72,19 @@
     line-height: 24px;
     /* 150% */
 }
+
+.req {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.req p {
+    color: var(--Body-Text, #333);
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+}
