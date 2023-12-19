@@ -14,7 +14,7 @@ const OutsideClick = ({ children, onClickOutside }: { children: React.ReactNode;
     return () => {
       document.removeEventListener("click", handleClickOutside, true);
     };
-  }, []);
+  }, [handleClickOutside]);
 
   if (!children) {
     return null;

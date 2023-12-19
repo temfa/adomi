@@ -37,7 +37,7 @@ const PhoneNumber = ({ type, action, placeholder }: { type: boolean; action?: an
   }
   useEffect(() => {
     getCountries();
-  }, []);
+  }, [getCountries]);
   const newCountries = [...country];
 
   return (

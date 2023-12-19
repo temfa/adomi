@@ -28,6 +28,7 @@ const Select = ({ placeholder, array }: { placeholder: string; array: string[] }
               return (
                 <div
                   className={selected === item ? styles.selectActive : styles.selectSingle}
+                  key={index}
                   onClick={() => {
                     setSelected(item);
                     setState(false);
