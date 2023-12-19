@@ -9,7 +9,7 @@ const Portfolio = () => {
     <>
       <Hero title="Our Portfolio of Transformative Ventures" text="From Vision to Victory" bg="./images/portfolio-bg.png" />
       <PortfolioBody />
-      <WhatsNext title="Meet the Team" link="/team" />
+      <WhatsNext title="Meet the Team" link="/team" type={false} />
       <Footer />
     </>
   );

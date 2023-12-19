@@ -1,6 +1,6 @@
 "use client";
 import { setCountries } from "@/reduxtoolkit/slice/countries";
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import styles from "./styles.module.css";
 import Flag from "@/svgs/flag";
@@ -29,14 +29,13 @@ const PhoneNumber = ({ type, action, placeholder }: { type: boolean; action?: an
 
   const [search, setSearch] = useState("");
   const dispatch = useDispatch();
-
-  const getCountries = useCallback(async () => {
-    const response = await fetch("https://restcountries.com/v3.1/all");
-    const countries = await response.json();
-    dispatch(setCountries(countries));
-    setCountry(countries);
-  }, []);
   useEffect(() => {
+    const getCountries = async () => {
+      const response = await fetch("https://restcountries.com/v3.1/all");
+      const countries = await response.json();
+      dispatch(setCountries(countries));
+      setCountry(countries);
+    };
     getCountries();
   }, []);
   const newCountries = [...country];

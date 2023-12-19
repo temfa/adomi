@@ -9,7 +9,7 @@ const Areas = () => {
     <>
       <Hero title="Ventures That Define Excellence" text="Forging the Future" bg="./images/areas.png" />
       <AreasIntro />
-      <WhatsNext title="Services" link="/link" />
+      <WhatsNext title="Services" link="/link" type={false} />
       <Footer />
     </>
   );
