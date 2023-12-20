@@ -7,6 +7,7 @@ import { persistReducer, FLUSH, PAUSE, PERSIST, PURGE, REGISTER, REHYDRATE } fro
 import countryReducer from "../slice/countries";
 import partnerPageReducer from "../slice/partnerPage";
 import startupPageReducer from "../slice/startupPage";
+import mobileReducer from "../slice/mobile";
 
 import storage from "redux-persist/lib/storage";
 import { setupListeners } from "@reduxjs/toolkit/query";
@@ -15,12 +16,13 @@ const reducers = combineReducers({
   countries: countryReducer,
   partnerPage: partnerPageReducer,
   startupPage: startupPageReducer,
+  mobile: mobileReducer,
 });
 
 const persistConfig = {
   key: "root",
   storage,
-  whitelist: ["countries", "partnerPage", "startupPage"],
+  whitelist: ["countries", "partnerPage", "startupPage", "mobile"],
 };
 
 const persistedReducer = persistReducer(persistConfig, reducers);

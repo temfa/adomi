@@ -1,41 +1,45 @@
-"use client";
-import React, { useState } from "react";
+import React from "react";
 import styles from "./styles.module.css";
+import SidebarStyled from "@/utils/styles/sidebar";
 import Logo from "@/svgs/logo";
-import { navbar } from "@/utils/data";
+import Close from "@/svgs/close";
+import { footerLinks, navbar } from "@/utils/data";
 import Link from "next/link";
-import Button from "../button";
 import { usePathname, useRouter } from "next/navigation";
-import Bars from "@/svgs/bars";
-import Sidebar from "../sidebar";
+import Button from "../button";
 import { useDispatch } from "react-redux";
-import { clearMobile, setMobile } from "@/reduxtoolkit/slice/mobile";
+import { clearMobile } from "@/reduxtoolkit/slice/mobile";
+import Linkedin from "@/svgs/linkedin";
+import Twitter from "@/svgs/twitter";
+import Facebook from "@/svgs/facebook";
+import Instagram from "@/svgs/instagram";
 
-const Header = () => {
-  const dispatch = useDispatch();
+const Sidebar = ({ right, action }: { right: string; action: any }) => {
   const pathname = usePathname();
   const router = useRouter();
-  const [right, setRight] = useState("-700px");
+  const dispatch = useDispatch();
+
+  const close = () => dispatch(clearMobile());
   return (
-    <div className={styles.headerContainer}>
-      <div className={styles.headerWrapper}>
-        <div className={styles.headerLogo}>
+    <SidebarStyled right={right}>
+      <div className={styles.sidebarContainer}>
+        <div className={styles.sidebarHeader}>
           <div>
             <Logo />
             <p>Adomi Capital & Advisory </p>
           </div>
-          <Bars
-            action={() => {
-              setRight("0px");
-              dispatch(setMobile(true));
-            }}
-          />
+          <Close action={action} />
         </div>
         <div className={styles.headerNav}>
           <div className={styles.headerLinks}>
             {navbar?.map((items, index) => {
               return (
-                <Link href={items.link} key={index}>
+                <Link
+                  href={items.link}
+                  key={index}
+                  onClick={() => {
+                    close();
+                  }}>
                   {items.title}
                 </Link>
               );
@@ -48,6 +52,7 @@ const Header = () => {
                   className={styles.headerContact}
                   onClick={() => {
                     router.push("/startup");
+                    close();
                   }}>
                   <Button type="Primary" buttonText="for Startups" active={true} />
                 </div>
@@ -55,6 +60,7 @@ const Header = () => {
                   className={styles.headerExplore}
                   onClick={() => {
                     router.push("/partners");
+                    close();
                   }}>
                   <Button type="Primary" buttonText="for Partnership" active={true} />
                 </div>
@@ -65,6 +71,7 @@ const Header = () => {
                   className={styles.headerContact}
                   onClick={() => {
                     router.push("/contact");
+                    close();
                   }}>
                   <Button type="Secondary" buttonText="Contact Us" active={true} />
                 </div>
@@ -73,6 +80,7 @@ const Header = () => {
                     className={styles.headerExplore}
                     onClick={() => {
                       router.push("/apply/partners");
+                      close();
                     }}>
                     <Button type="Primary" buttonText="Apply now" active={true} />
                   </div>
@@ -81,6 +89,7 @@ const Header = () => {
                     className={styles.headerExplore}
                     onClick={() => {
                       router.push("/apply/startup");
+                      close();
                     }}>
                     <Button type="Primary" buttonText="Apply now" active={true} />
                   </div>
@@ -89,6 +98,7 @@ const Header = () => {
                     className={styles.headerExplore}
                     onClick={() => {
                       router.push("/get-started");
+                      close();
                     }}>
                     <Button type="Primary" buttonText="Explore Opportunities" active={true} />
                   </div>
@@ -96,17 +106,44 @@ const Header = () => {
               </>
             )}
           </div>
+          <div className={styles.headerFooter}>
+            <div className={styles.footerHeader}>
+              <div>
+                <h3>Company</h3>
+                {footerLinks.company?.map((items, index) => {
+                  return (
+                    <Link href={items.link} key={index}>
+                      {items.title}
+                    </Link>
+                  );
+                })}
+              </div>
+              <div>
+                <h3>Quick Links</h3>
+                {footerLinks.quick?.map((items, index) => {
+                  return (
+                    <Link href={items.link} key={index}>
+                      {items.title}
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+            <div className={styles.footerBody}>
+              <div className={styles.follow}>
+                <p>Follow us</p>
+                <Linkedin />
+                <Twitter />
+                <Facebook />
+                <Instagram />
+              </div>
+              <p>© 2023 Adomi Capital & Advisory Nigeria Ltd</p>
+            </div>
+          </div>
         </div>
       </div>
-      <Sidebar
-        right={right}
-        action={() => {
-          setRight("-700px");
-          dispatch(clearMobile());
-        }}
-      />
-    </div>
+    </SidebarStyled>
   );
 };
 
-export default Header;
+export default Sidebar;

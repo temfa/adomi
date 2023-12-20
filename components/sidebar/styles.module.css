@@ -1,0 +1,138 @@
+.sidebarContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    width: 100%;
+}
+
+.sidebarHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.sidebarHeader div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sidebarHeader div p {
+    color: var(--Dark-Background, #121212);
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+}
+
+.sidebarHeader svg {
+    cursor: pointer;
+}
+
+.headerNav {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.headerLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.headerLinks a {
+    color: var(--Heading-Text, #0F1A20);
+    text-decoration: none;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    font-family: "Work Sans", sans-serif;
+}
+
+.headerActions {
+    display: flex;
+    gap: 32px;
+}
+
+.headerContact {
+    width: 40%;
+}
+
+.headerExplore {
+    width: 60%;
+}
+
+.headerFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footerHeader {
+    display: flex;
+}
+
+.footerHeader div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footerHeader div h3 {
+    color: var(--Heading-Text, #0F1A20);
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    /* 150% */
+}
+
+.footerHeader div a {
+    color: var(--Body-Text, #333);
+    text-decoration: none;
+    font-family: "Work Sans", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 153.846% */
+}
+
+.footerBody {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.follow {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.follow p {
+    color: var(--Heading-Text, #0F1A20);
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+}
+
+.footerBody>p {
+    color: var(--Body-Text, #333);
+    font-family: "Work Sans", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 153.846% */
+}
