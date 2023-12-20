@@ -2,6 +2,7 @@
     width: 100%;
     padding: 24px 0px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .headerWrapper {
@@ -85,7 +86,12 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
+    .headerContainer {
+        padding: 24px 16px;
+        box-sizing: border-box;
+    }
+
     .headerWrapper {
         flex-direction: column;
         align-items: flex-start;

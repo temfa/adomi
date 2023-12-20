@@ -141,3 +141,39 @@
     padding: 14px 0px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+    .footerCont>h2 {
+        font-size: 57px;
+        line-height: 86px;
+        text-align: unset;
+    }
+
+    .footerLinks {
+        width: 100%;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footerCopy {
+        flex-direction: column-reverse;
+        gap: 40px;
+        align-items: flex-start;
+    }
+
+    .newsletter {
+        width: 100%;
+    }
+
+    .newsletter>p {
+        text-align: unset;
+    }
+
+    .newsletter div input {
+        width: 70%;
+    }
+
+    .newsletter div button {
+        width: 30%;
+    }
+}

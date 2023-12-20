@@ -17,9 +17,14 @@ const SidebarStyled = styled.div<Sample>`
   overflow: hidden;
   overflow-y: scroll;
   z-index: 5;
+  display: none;
 
   &::-webkit-scrollbar {
     display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: block;
   }
 `;
 

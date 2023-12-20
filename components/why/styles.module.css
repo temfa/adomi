@@ -58,3 +58,43 @@
 .whyButton {
     width: 285px;
 }
+
+.whyImage img:last-child {
+    display: none;
+}
+
+@media screen and (max-width:500px) {
+    .whyContainer {
+        padding: 80px 0px;
+    }
+
+    .whyWrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .whyText,
+    .whyButton {
+        width: 100%;
+    }
+
+    .whyHeader>h2 {
+        font-size: 33px;
+        line-height: 50px;
+        /* 151.515% */
+    }
+
+    .whyHeader p {
+        width: 100%;
+    }
+
+    .whyImage img:last-child {
+        display: block;
+        width: 100%;
+    }
+
+    .whyImage img:first-child {
+        display: none;
+    }
+
+}

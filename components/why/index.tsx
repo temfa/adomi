@@ -22,7 +22,10 @@ const Why = () => {
               <Button buttonText="Why Adomi Capital is different" active={true} type="Secondary" />
             </div>
           </div>
-          <Image src="./images/why.png" width={602} height={640} alt="why" />
+          <div className={styles.whyImage}>
+            <Image src="./images/why.png" alt="why" width={602} height={640} />
+            <Image src="./images/why-mobile.png" alt="why" width={398} height={426} />
+          </div>
         </div>
       </Layout>
     </div>

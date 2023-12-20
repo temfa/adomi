@@ -12,32 +12,32 @@ import HeroStyled from "@/utils/styles/hero";
 const Hero = ({ page, title, text, bg }: { page?: string; title?: string; text?: string; bg: string }) => {
   return (
     <HeroStyled bg={bg} page={page}>
-      <Layout>
-        <Header />
-      </Layout>
+      <Header />
       <div className={styles.heroWrapper}>
         <Layout>
           {page === "home" ? (
             <>
-              <div className={styles.heroText}>
-                <h2>
-                  Empowering <span>Innovation, </span>
-                  Fueling Growth
-                </h2>
-                <div>
-                  <Button type="Primary" buttonText="explore opportunities" active={true} />
+              <div className={styles.heroTest}>
+                <div className={styles.heroText}>
+                  <h2>
+                    Empowering <span>Innovation, </span>
+                    Fueling Growth
+                  </h2>
+                  <div>
+                    <Button type="Primary" buttonText="explore opportunities" active={true} />
+                  </div>
                 </div>
-              </div>
-              <div className={styles.heroShapes}>
-                <Slider {...settings}>
-                  {heroSlider?.map((items, index) => {
-                    return (
-                      <div className={styles.sliderImage} key={index}>
-                        <Image width={(index + 1) % 0 ? 405 : 296} height={261} alt="hero-slide" src={items} />
-                      </div>
-                    );
-                  })}
-                </Slider>
+                <div className={styles.heroShapes}>
+                  <Slider {...settings}>
+                    {heroSlider?.map((items, index) => {
+                      return (
+                        <div className={styles.sliderImage} key={index}>
+                          <Image width={(index + 1) % 0 ? 405 : 296} height={261} alt="hero-slide" src={items} />
+                        </div>
+                      );
+                    })}
+                  </Slider>
+                </div>
               </div>
             </>
           ) : page === "contact" ? (

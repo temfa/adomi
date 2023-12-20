@@ -18,7 +18,7 @@
     border-radius: 8px;
     border: 1px solid var(--primary-500, #1B2CC1);
     background: var(--White, #FFF);
-    padding: 16px 24px;
+    padding: 16px 0px;
     width: 100%;
     cursor: pointer;
     color: var(--primary-500, #1B2CC1);
@@ -33,7 +33,7 @@
 .disabledButton {
     border-radius: 8px;
     background: var(--primary-25, #8F94C1);
-    padding: 16px 24px;
+    padding: 16px 0px;
     width: 100%;
     cursor: not-allowed;
     color: var(--neutral-25, #F8F8F8);

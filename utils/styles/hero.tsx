@@ -14,6 +14,12 @@ const HeroStyled = styled.div<Sample>`
   background-image: url(${({ bg }) => bg});
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media screen and (max-width: 768px) {
+    height: fit-content;
+    gap: 96px;
+    padding-bottom: 90px;
+  }
 `;
 
 export default HeroStyled;

@@ -25,10 +25,6 @@ li {
 
 }
 
-body {
-  width: 100%;
-  overflow-x: hidden;
-}
 
 input:focus,
 select:focus,

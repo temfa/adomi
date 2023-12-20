@@ -123,3 +123,18 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width:500px) {
+    .heroText>h2 {
+        font-size: 48px;
+        line-height: 56px;
+        /* 103.704% */
+    }
+
+    .heroShapes {
+        position: unset;
+        width: 100%;
+        height: unset;
+    }
+
+}

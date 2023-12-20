@@ -86,3 +86,24 @@
     display: flex;
     gap: 24px;
 }
+
+@media screen and (max-width: 768px) {
+    .partnerContainer {
+        padding: 80px 0px;
+    }
+
+    .partnerWrapper {
+        flex-direction: column;
+        gap: 64px
+    }
+
+    .partnerText {
+        width: 100%;
+        gap: 36px
+    }
+
+    .partnerHeader h2 {
+        line-height: 50px;
+        font-size: 33px;
+    }
+}

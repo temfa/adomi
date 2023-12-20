@@ -37,9 +37,35 @@
 }
 
 .cardText>button {
-    width: fit-content;
+    width: 138px;
 }
 
 .cardBody {
     width: 57%;
+}
+
+@media screen and (max-width:768px) {
+    .cardLayout {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .cardText {
+        width: 100%;
+        gap: 16px;
+    }
+
+    .cardText>h2 {
+        font-size: 33px;
+        line-height: 50px;
+        /* 151.515% */
+    }
+
+    .cardText>button {
+        width: 192px;
+    }
+
+    .cardBody {
+        width: 100%;
+    }
 }
