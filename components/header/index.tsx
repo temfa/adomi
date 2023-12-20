@@ -1,22 +1,27 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import styles from "./styles.module.css";
 import Logo from "@/svgs/logo";
 import { navbar } from "@/utils/data";
 import Link from "next/link";
 import Button from "../button";
 import { usePathname, useRouter } from "next/navigation";
+import Close from "@/svgs/close";
+import Bars from "@/svgs/bars";
 
 const Header = () => {
   const pathname = usePathname();
   const router = useRouter();
+  const [mobile, setMobile] = useState(false);
   return (
-    <div className={styles.headerContainer}>
+    <div className={mobile ? styles.headerContainers : styles.headerContainer}>
       <div className={styles.headerWrapper}>
         <div className={styles.headerLogo}>
           <div>
             <Logo />
             <p>Adomi Capital & Advisory </p>
           </div>
+          {mobile ? <Close action={() => setMobile(false)} /> : <Bars action={() => setMobile(true)} />}
         </div>
         <div className={styles.headerNav}>
           <div className={styles.headerLinks}>
@@ -83,6 +88,7 @@ const Header = () => {
               </>
             )}
           </div>
+          <div className={styles.headerFooter}></div>
         </div>
       </div>
     </div>

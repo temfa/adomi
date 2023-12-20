@@ -12,9 +12,7 @@ import HeroStyled from "@/utils/styles/hero";
 const Hero = ({ page, title, text, bg }: { page?: string; title?: string; text?: string; bg: string }) => {
   return (
     <HeroStyled bg={bg} page={page}>
-      <Layout>
-        <Header />
-      </Layout>
+      <Header />
       <div className={styles.heroWrapper}>
         <Layout>
           {page === "home" ? (
