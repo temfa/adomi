@@ -18,6 +18,11 @@
     background: var(--info-100, #96D1F6);
 }
 
+.singleProcess img:nth-child(2),
+.singleProcess2 img:nth-child(2) {
+    display: none;
+}
+
 .singleText {
     display: flex;
     flex-direction: column;
@@ -51,4 +56,29 @@
 
 .processButton {
     width: 214px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .singleProcess,
+    .singleProcess2 {
+        width: 100%;
+        padding: 56px 16px;
+    }
+
+
+    .singleProcess img:nth-child(2),
+    .singleProcess2 img:nth-child(2) {
+        display: block;
+    }
+
+
+    .singleProcess img:nth-child(1),
+    .singleProcess2 img:nth-child(1) {
+        display: none;
+    }
+
+    .processButton {
+        width: 100%;
+    }
 }

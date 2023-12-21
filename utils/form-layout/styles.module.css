@@ -61,3 +61,37 @@
     padding: 60px 48px;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 768px) {
+    .formContainer {
+        padding: 80px 0px;
+    }
+
+    .formCont {
+        gap: 32px;
+    }
+
+    .formWrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .formFirst,
+    .formSecond {
+        width: 100%;
+    }
+
+    .formFirst h2 {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 28px;
+    }
+
+    .formFirst .active {
+        font-weight: 500;
+    }
+
+    .formSecond {
+        padding: 40px 24px;
+    }
+}

@@ -112,7 +112,12 @@ const Sidebar = ({ right, action }: { right: string; action: any }) => {
                 <h3>Company</h3>
                 {footerLinks.company?.map((items, index) => {
                   return (
-                    <Link href={items.link} key={index}>
+                    <Link
+                      href={items.link}
+                      key={index}
+                      onClick={() => {
+                        close();
+                      }}>
                       {items.title}
                     </Link>
                   );
@@ -122,7 +127,12 @@ const Sidebar = ({ right, action }: { right: string; action: any }) => {
                 <h3>Quick Links</h3>
                 {footerLinks.quick?.map((items, index) => {
                   return (
-                    <Link href={items.link} key={index}>
+                    <Link
+                      href={items.link}
+                      key={index}
+                      onClick={() => {
+                        close();
+                      }}>
                       {items.title}
                     </Link>
                   );

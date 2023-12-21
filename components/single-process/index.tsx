@@ -7,6 +7,7 @@ const SingleProcess = ({ title, text }: { title: string; text: string }) => {
   return (
     <div className={title === "Startups" ? styles.singleProcess : styles.singleProcess2}>
       <Image src="./images/about1.png" width={470} height={465} alt="Single Process" />
+      <Image src="./images/why-mobile.png" alt="why" width={366} height={426} />
       <div className={styles.singleText}>
         <div className={styles.processText}>
           <h2>{title}</h2>

@@ -53,3 +53,20 @@
     line-height: 24px;
     /* 150% */
 }
+
+@media screen and (max-width: 768px) {
+    .serviceHeader h2 {
+        font-size: 33px;
+        line-height: 50px;
+    }
+
+    .serviceBody {
+        padding: 80px 0px;
+        gap: 40px;
+    }
+
+    .serviceSingle h2 {
+        font-size: 33px;
+        line-height: 50px;
+    }
+}

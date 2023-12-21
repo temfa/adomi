@@ -10,7 +10,7 @@ import { getStarted } from "@/utils/data";
 const GetStarted = () => {
   return (
     <>
-      <Hero bg="./images/get-started.png" page="get started" text="Infinite Horizon" title="Explore Diverse Opportunities Tailored For You" />
+      <Hero bg="./images/get-started.png" page="get started" text="Meet the Architects of Innovation" title="Explore Diverse Opportunities Tailored For You" />
       <ServicesIntro
         text1="At Adomi Capital & Advisory, investment opportunities transcend boundaries. Our focus is on catalysing innovation and fostering growth in Ghana and Nigeria. "
         text2="Explore the diverse ventures that await your strategic investment and be a part of the success stories shaping these thriving economies."

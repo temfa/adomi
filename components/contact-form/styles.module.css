@@ -96,3 +96,37 @@
 .contactButton {
     width: 248px;
 }
+
+@media screen and (max-width: 768px) {
+    .contactBody {
+        padding: 80px 0px;
+    }
+
+    .contactWrapper {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    .contactSocials,
+    .contactBody form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contactSocialsBody>h2 {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .contactForm {
+        padding: 40px 24px;
+    }
+
+    .contactFormDouble {
+        flex-direction: column;
+    }
+
+    .contactButton {
+        width: 100%;
+    }
+}

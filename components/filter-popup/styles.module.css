@@ -75,3 +75,15 @@
     cursor: pointer;
     /* 150% */
 }
+
+@media screen and (max-width: 768px) {
+    .filterPopupBody {
+        display: inline;
+    }
+
+    .filterPopupBody p {
+        display: inline-flex;
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+}

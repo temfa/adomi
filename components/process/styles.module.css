@@ -39,3 +39,55 @@
     display: flex;
     justify-content: space-between;
 }
+
+.processAlert {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .processContainer {
+        padding: 80px 0px
+    }
+
+    .processWrapper {
+        gap: 40px;
+    }
+
+    .processHeader h2:first-child {
+        font-size: 33px;
+        line-height: 50px;
+    }
+
+    .processHeader h2:last-child {
+        font-size: 16px;
+        text-align: center;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .processAlert {
+        display: flex;
+        gap: 40px;
+    }
+
+    .processAlert p {
+        width: 100%;
+        padding: 16px 24px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        color: var(--White, #FFF);
+        text-align: center;
+        font-family: "Work Sans", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+
+    .processAlert .active {
+        background: var(--neutral-25, #F8F8F8);
+        color: var(--neutral-900, #303030);
+    }
+}

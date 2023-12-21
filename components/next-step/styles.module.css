@@ -53,3 +53,24 @@
 .nextSecond div {
     width: 296px;
 }
+
+@media screen and (max-width:768px) {
+    .nextStep {
+        padding: 80px 16px;
+        box-sizing: border-box;
+    }
+
+    .nextFirst h2 {
+        font-size: 33px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .nextSecond p {
+        text-align: center;
+    }
+
+    .nextSecond div {
+        width: 100%;
+    }
+}
