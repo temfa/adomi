@@ -88,3 +88,39 @@
     line-height: 24px;
     /* 150% */
 }
+
+.storyImg img:last-child {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .storyContainers,
+    .storyContainer {
+        padding: 80px 0px;
+    }
+
+    .storyContainer .storyWrapper,
+    .storyContainers .storyWrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .storyText {
+        width: 100%;
+        gap: 16px;
+    }
+
+    .storyHeader>h2 {
+        font-size: 33px;
+        line-height: 50px;
+    }
+
+    .storyImg img:first-child {
+        display: none;
+    }
+
+    .storyImg img:last-child {
+        display: block;
+    }
+}

@@ -29,7 +29,10 @@ const Story = ({ array, type }: { array: any; type: boolean }) => {
                 </div>
               ) : null}
             </div>
-            <Image src={item.img} width={602} height={640} alt="about" />
+            <div className={styles.storyImg}>
+              <Image src={item.img} width={602} height={640} alt="about" />
+              <Image src="./images/why-mobile.png" alt="about" width={398} height={426} />
+            </div>
           </div>
         </Layout>
       </div>

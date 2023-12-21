@@ -137,4 +137,14 @@
         height: unset;
     }
 
+    .heroTexts h2:first-child {
+        font-size: 23px;
+        line-height: 34px;
+    }
+
+    .heroTexts h2:last-child {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
 }

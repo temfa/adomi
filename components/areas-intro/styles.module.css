@@ -76,3 +76,26 @@
     line-height: 24px;
     /* 150% */
 }
+
+.areaBodyText>span {
+    color: var(--primary-500, #1B2CC1);
+    display: inline-flex;
+    cursor: pointer;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .areaBodyText,
+    .areasText {
+        padding: 80px 0px;
+    }
+
+    .areasImg {
+        height: 447px;
+    }
+}

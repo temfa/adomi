@@ -37,3 +37,29 @@
 .whatsWrapper div svg {
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+    .whatsNext {
+        padding: 80px 0px;
+    }
+
+    .whatsWrapper {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+    }
+
+    .whatsWrapper p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .whatsWrapper div {
+        align-items: center;
+    }
+
+    .whatsWrapper div h2 {
+        font-size: 33px;
+        line-height: 50px;
+    }
+}

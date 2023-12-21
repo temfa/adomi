@@ -1,10 +1,12 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import styles from "./styles.module.css";
 import Layout from "@/utils/layout";
 import Image from "next/image";
 import { areasData } from "@/utils/data";
 
 const AreasIntro = () => {
+  const [index2, setIndex] = useState(-1);
   return (
     <div className={styles.areasIntro}>
       <Layout>
@@ -33,9 +35,22 @@ const AreasIntro = () => {
                     <p>{item.text}</p>
                     <h2>{item.title}</h2>
                   </div>
-                  {item.subTexts?.map((items, index2) => {
-                    return <p key={index2}>{items}</p>;
-                  })}
+                  {index === index2
+                    ? item.subTexts?.slice(0, item.subTexts.length)?.map((items, index2) => {
+                        return <p key={index2}>{items}</p>;
+                      })
+                    : item.subTexts?.slice(0, 4)?.map((items, index2) => {
+                        return <p key={index2}>{items}</p>;
+                      })}
+                  {index === index2 ? null : (
+                    <span
+                      onClick={() => {
+                        setIndex(index);
+                      }}>
+                      Show More...
+                    </span>
+                  )}
+                  {index2 === index ? <span onClick={() => setIndex(-1)}>Show Less...</span> : null}
                 </div>
               </Layout>
             </div>
