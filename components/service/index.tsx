@@ -7,9 +7,9 @@ const Service = () => {
   return services?.map((item, index) => {
     return (
       <div className={styles.serviceContainer} key={index}>
-        <div className={styles.serviceHeader}>
+        {/* <div className={styles.serviceHeader}>
           <h2>{item.title}</h2>
-        </div>
+        </div> */}
         <Layout>
           <div className={styles.serviceBody}>
             {item.subTitles?.map((items, index2) => {

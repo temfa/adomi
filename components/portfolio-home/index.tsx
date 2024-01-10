@@ -15,8 +15,8 @@ const PortfolioHome = () => {
       <Layout>
         <CardLayout
           title="Our Portfolio Companies"
-          text1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore "
-          text2="Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu"
+          text1="The success of our portfolio holdings has translated into significant returns for our investors and has had a positive impact on job creation in Nigeria and Ghana. Our initial investments were strategically made in the hospitality, real estate, and technology sectors."
+          text2=""
           buttonText="Explore Portfolio">
           <div>
             <Slider {...setting}>

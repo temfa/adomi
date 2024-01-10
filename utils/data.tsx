@@ -4,20 +4,24 @@ export const navbar = [
     link: "/home",
   },
   {
-    title: "About us",
+    title: "About ",
     link: "/about",
   },
   {
-    title: "Areas of Interest",
-    link: "/areas",
+    title: "SME Services",
+    link: "/services",
   },
   {
-    title: "Services",
-    link: "/services",
+    title: "Venture Interest",
+    link: "/areas",
   },
   {
     title: "Portfolio",
     link: "/portfolio",
+  },
+  {
+    title: "Blog",
+    link: "/blog",
   },
   // {
   //   title: "Our Team",
@@ -32,7 +36,7 @@ export const footerLinks = {
       link: "/home",
     },
     {
-      title: "Our Areas of Interest",
+      title: "Venture Interest",
       link: "/areas",
     },
     {
@@ -342,146 +346,46 @@ export const areasData = [
 export const portfolio = [
   [
     {
-      name: "Palmpay",
+      name: "Bridgeview Resort",
       type: "Software",
-      location: "Nigeria",
+      location: "Ghana",
       story:
-        "Palmpay is employing advanced algorithms and data analytics to provide personalized investment strategies, helping customers achieve their financial goals with confidence.",
-      img: "./images/palmpay.png",
+        "BridgeView is a multi-award winning resort in Ghana that is delicately hemmed in by the verdant Akosombo mountains and surrounded by the expanse of one of the largest man-made lakes in the world; The Volta Lake. A world away from the bustling streets of Ghana’s urban cities, BridgeView effortlessly blends into the tranquility of nature.",
+      img: "./images/bridgeview.png",
     },
     {
-      name: "Palmpay",
+      name: "Effect Studios",
       type: "Software",
-      location: "Nigeria",
+      location: "Ghana",
       story:
-        "Palmpay is employing advanced algorithms and data analytics to provide personalized investment strategies, helping customers achieve their financial goals with confidence.",
-      img: "./images/palmpay.png",
-    },
-  ],
-  [
-    {
-      name: "Palmpay",
-      type: "Software",
-      location: "Nigeria",
-      story:
-        "Palmpay is employing advanced algorithms and data analytics to provide personalized investment strategies, helping customers achieve their financial goals with confidence.",
-      img: "./images/palmpay.png",
-    },
-    {
-      name: "Palmpay",
-      type: "Software",
-      location: "Nigeria",
-      story:
-        "Palmpay is employing advanced algorithms and data analytics to provide personalized investment strategies, helping customers achieve their financial goals with confidence.",
-      img: "./images/palmpay.png",
+        "We bring life to your ideas. Our work is a rich integration of expertise in idea conception, product development and creation while taking you on a journey of innovative and extraordinary use of technology and ingenuity.",
+      img: "./images/ss.png",
     },
   ],
   [
     {
-      name: "Palmpay",
+      name: "Echo",
       type: "Software",
       location: "Nigeria",
-      story:
-        "Palmpay is employing advanced algorithms and data analytics to provide personalized investment strategies, helping customers achieve their financial goals with confidence.",
-      img: "./images/palmpay.png",
+      story: "Collect simple customer feedback throughout their journey, improve their experience to drive real change.",
+      img: "./images/echo.png",
     },
     {
-      name: "Palmpay",
+      name: "Contena",
       type: "Software",
       location: "Nigeria",
-      story:
-        "Palmpay is employing advanced algorithms and data analytics to provide personalized investment strategies, helping customers achieve their financial goals with confidence.",
-      img: "./images/palmpay.png",
+      story: "Powerful logistics solutions for businesses that drive efficiency and reduce carbon footprint.",
+      img: "./images/contena.png",
     },
   ],
   [
     {
-      name: "Palmpay",
+      name: "The Grub",
       type: "Software",
       location: "Nigeria",
       story:
-        "Palmpay is employing advanced algorithms and data analytics to provide personalized investment strategies, helping customers achieve their financial goals with confidence.",
-      img: "./images/palmpay.png",
-    },
-    {
-      name: "Palmpay",
-      type: "Software",
-      location: "Nigeria",
-      story:
-        "Palmpay is employing advanced algorithms and data analytics to provide personalized investment strategies, helping customers achieve their financial goals with confidence.",
-      img: "./images/palmpay.png",
-    },
-  ],
-  [
-    {
-      name: "Palmpay",
-      type: "Software",
-      location: "Nigeria",
-      story:
-        "Palmpay is employing advanced algorithms and data analytics to provide personalized investment strategies, helping customers achieve their financial goals with confidence.",
-      img: "./images/palmpay.png",
-    },
-    {
-      name: "Palmpay",
-      type: "Software",
-      location: "Nigeria",
-      story:
-        "Palmpay is employing advanced algorithms and data analytics to provide personalized investment strategies, helping customers achieve their financial goals with confidence.",
-      img: "./images/palmpay.png",
-    },
-  ],
-  [
-    {
-      name: "Palmpay",
-      type: "Software",
-      location: "Nigeria",
-      story:
-        "Palmpay is employing advanced algorithms and data analytics to provide personalized investment strategies, helping customers achieve their financial goals with confidence.",
-      img: "./images/palmpay.png",
-    },
-    {
-      name: "Palmpay",
-      type: "Software",
-      location: "Nigeria",
-      story:
-        "Palmpay is employing advanced algorithms and data analytics to provide personalized investment strategies, helping customers achieve their financial goals with confidence.",
-      img: "./images/palmpay.png",
-    },
-  ],
-  [
-    {
-      name: "Palmpay",
-      type: "Software",
-      location: "Nigeria",
-      story:
-        "Palmpay is employing advanced algorithms and data analytics to provide personalized investment strategies, helping customers achieve their financial goals with confidence.",
-      img: "./images/palmpay.png",
-    },
-    {
-      name: "Palmpay",
-      type: "Software",
-      location: "Nigeria",
-      story:
-        "Palmpay is employing advanced algorithms and data analytics to provide personalized investment strategies, helping customers achieve their financial goals with confidence.",
-      img: "./images/palmpay.png",
-    },
-  ],
-  [
-    {
-      name: "Palmpay",
-      type: "Software",
-      location: "Nigeria",
-      story:
-        "Palmpay is employing advanced algorithms and data analytics to provide personalized investment strategies, helping customers achieve their financial goals with confidence.",
-      img: "./images/palmpay.png",
-    },
-    {
-      name: "Palmpay",
-      type: "Software",
-      location: "Nigeria",
-      story:
-        "Palmpay is employing advanced algorithms and data analytics to provide personalized investment strategies, helping customers achieve their financial goals with confidence.",
-      img: "./images/palmpay.png",
+        "The Grub is an Africa-focused NFT marketplace and mint specifically designed to help African digital art creators put their art out to the world. We are hard at work building a new economy that helps African creators use blockchain technology to benefit from their digital art.",
+      img: "./images/g.png",
     },
   ],
 ];
@@ -570,13 +474,13 @@ export const services = [
   {
     title: "PHASE II",
     subTitles: [
-      {
-        texts: "Venture Capital",
-        subTexts: [
-          "Driven by our views of the trends shaping societies, we invest today with tomorrow in mind, so every generation prospers. We aim to build a resilient and forward looking portfolio that delivers sustainable returns over the long term. We deploy capital to catalyse solutions that can enable companies to transition to a more sustainable future, tap on opportunities to invest in future growth sectors and business models, and encourage enterprises to transform through efforts in innovation.",
-          "Our investment activities are aligned to four structural trends that shape our long term portfolio construction. Adomi Capital specializes in technology and innovation sectors, such as software, biotech, agritech, fintech, and clean energy, fostering advancements in these areas.",
-        ],
-      },
+      // {
+      //   texts: "Venture Capital",
+      //   subTexts: [
+      //     "Driven by our views of the trends shaping societies, we invest today with tomorrow in mind, so every generation prospers. We aim to build a resilient and forward looking portfolio that delivers sustainable returns over the long term. We deploy capital to catalyse solutions that can enable companies to transition to a more sustainable future, tap on opportunities to invest in future growth sectors and business models, and encourage enterprises to transform through efforts in innovation.",
+      //     "Our investment activities are aligned to four structural trends that shape our long term portfolio construction. Adomi Capital specializes in technology and innovation sectors, such as software, biotech, agritech, fintech, and clean energy, fostering advancements in these areas.",
+      //   ],
+      // },
       {
         texts: "Fintech and Payment Gateway Solution ",
         subTexts: [

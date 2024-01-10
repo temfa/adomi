@@ -12,11 +12,14 @@ const Partner = () => {
           <div className={styles.partnerText}>
             <div className={styles.partnerHeader}>
               <h3>WE BUILD TOGETHER</h3>
-              <h2>Partner with us today & experience the difference!</h2>
+              <h2>Partner with us today and leverage the expertise of our diverse talent.</h2>
             </div>
             <div className={styles.partnerHeader}>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-              <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu</p>
+              <p>
+                Our team combines seasoned professionals with a wealth of experience in finance, strategic planning, and project execution. With a collaborative approach and a deep
+                understanding of various industries, we deliver innovative solutions tailored to your unique needs
+              </p>
+              {/* <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu</p> */}
             </div>
             <div className={styles.startUp}>
               <div>

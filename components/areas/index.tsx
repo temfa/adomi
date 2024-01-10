@@ -13,8 +13,8 @@ const Areas = () => {
       <Layout>
         <CardLayout
           title="Our areas of interest."
-          text1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore "
-          text2="Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu"
+          text1="Our service offerings have been carefully selected to provide SMEs with innovative financial solutions, tailored to their specific needs. In line with this, our Venture Capital interests are focused on industries that will fuel Africa's growth and decrease its reliance on export of raw materials. Additionally, our financial solutions cater specifically to SMEs and are designed to alleviate any funding obstacles commonly faced by small businesses. Our mission is to support SMEs in delivering on their promises to their customers while also implementing cutting-edge technologies to enhance their financial activities "
+          text2=""
           buttonText="learn more">
           <div className={styles.areaWrapper}>
             <div className={styles.areaBody}>

@@ -15,8 +15,10 @@ const Why = () => {
               <h2>Designed for your need in mind</h2>
             </div>
             <div className={styles.whyHeader}>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
-              <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu</p>
+              <p>
+                Our primary focus is on delivering value to our customers, who are mostly thriving SMEs. Our solutions are tailored to channel capital and innovation towards the
+                crucial aspects of your business.
+              </p>
             </div>
             <div className={styles.whyButton}>
               <Button buttonText="Why Adomi Capital is different" active={true} type="Secondary" />

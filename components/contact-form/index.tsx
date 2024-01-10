@@ -25,11 +25,11 @@ const ContactForm = () => {
               <h2>Chat to us</h2>
               <div className={styles.contactSocialWrap}>
                 <p>Our friendly team is here to help</p>
-                <Link href="mailto:hello@adomicapitalvc.com">
+                <Link href="mailto:info@adomicapital.com">
                   <span>
                     <Envelope />
                   </span>
-                  hello@adomicapitalvc.com
+                  info@adomicapital.com
                 </Link>
               </div>
             </div>
@@ -37,13 +37,17 @@ const ContactForm = () => {
               <h2>Call us</h2>
               <div className={styles.contactSocialWrap}>
                 <p>Mon - Fri from 8am to 5pm</p>
-                <Link href="">
+                <Link href="tel:+2348053365985">
                   <span>
                     <Phone />
                   </span>
-                  +91 845 789 123
+                  +2348053365985
                 </Link>
               </div>
+            </div>
+            <div className={styles.contactSocialsBody}>
+              <h2>Address</h2>
+              <p> 6B Abagbon Close Off Adeola Odeku Victoria Island Lagos, Nigeria</p>
             </div>
             <div className={styles.contactSocialsBody}>
               <h2>Social media</h2>

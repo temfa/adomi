@@ -11,15 +11,18 @@ const AreasIntro = () => {
     <div className={styles.areasIntro}>
       <Layout>
         <div className={styles.areasText}>
-          <h2>Introduction</h2>
+          {/* <h2>Introduction</h2> */}
           <p>
-            As a forward-thinking venture capital firm, we specialise in strategic investments across diverse sectors, aiming to foster innovation and drive sustainable growth.{" "}
+            Driven by our views of the trends shaping African societies, we invest today with tomorrow in mind, so every generation prospers. We aim to build a resilient and
+            forward-looking portfolio that delivers sustainable returns over the long term. We deploy capital to catalyse solutions that can enable companies to transition to a
+            more sustainable future, tap on opportunities to invest in future growth sectors and business models, and encourage enterprises to transform through efforts in
+            innovation.
           </p>
-          <p>
+          {/* <p>
             At Adomi Capital & Advisory, innovation meets investment, and groundbreaking ideas come to life. Our commitment to fostering transformative ventures is reflected in our
             carefully curated areas of investment. Each sector we explore is a realm of untapped potential, an arena where visionaries and pioneers converge to shape the future.
           </p>
-          <p>Explore our areas of investment below and discover how we can partner with you to transform ideas into thriving ventures.</p>
+          <p>Explore our areas of investment below and discover how we can partner with you to transform ideas into thriving ventures.</p> */}
         </div>
       </Layout>
       <div className={styles.areasBody}>
