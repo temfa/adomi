@@ -2,7 +2,21 @@ import React from "react";
 import styles from "./styles.module.css";
 import Button from "@/components/button";
 
-const CardLayout = ({ title, text1, text2, buttonText, children }: { title: string; text1: string; text2: string; buttonText: string; children: React.ReactNode }) => {
+const CardLayout = ({
+  title,
+  text1,
+  text2,
+  text3,
+  buttonText,
+  children,
+}: {
+  title: string;
+  text1: string;
+  text2: string;
+  text3?: string;
+  buttonText: string;
+  children: React.ReactNode;
+}) => {
   return (
     <div className={styles.cardLayout}>
       <div className={styles.cardText}>
@@ -10,6 +24,7 @@ const CardLayout = ({ title, text1, text2, buttonText, children }: { title: stri
         <div>
           <p>{text1}</p>
           <p>{text2}</p>
+          <p>{text3}</p>
         </div>
         <Button active={true} buttonText={buttonText} type="Secondary" />
       </div>

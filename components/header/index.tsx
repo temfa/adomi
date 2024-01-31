@@ -22,7 +22,7 @@ const Header = () => {
         <div className={styles.headerLogo}>
           <div>
             <Logo />
-            <p>Adomi Capital & Advisory </p>
+            <p>Adomi Capital </p>
           </div>
           <Bars
             action={() => {
